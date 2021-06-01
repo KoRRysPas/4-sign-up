@@ -1,7 +1,19 @@
 body {
+  background-image: url(/ddd.PNG);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-
+body,
+body * {
+  margin: 0;
+  padding: 0;
+  vertical-align: top;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
 main {
+  
   display: inline-block;
   width: 800px;
   margin-top: 100px;
@@ -9,9 +21,11 @@ main {
 }
 
 .left-column {
+  background-image: url(../img/picas.jpg);
+  background-size: cover;
   width: 40%;
   float: left;
-  background-color: yellow;
+  padding: 50px;
 }
 
 .bottom-links {
@@ -28,11 +42,77 @@ main {
 .right-column {
   width: 60%;
   float: left;
-  background-color: pink;
+  padding: 50px;
+  background-color: #fff;
 }
 
 .close {
+  display: inline-block;
+  float: right;
 }
 
 .form {
+  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+}
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-row.flex-row {
+  flex-direction: row;
+  gap: 30px;
+}
+
+.form-row  > label, input {
+  width: 100%;
+  display: inline-block;
+}
+.form-row > label {
+  text-transform: uppercase;
+}
+.form-row > input {
+  line-height: 40px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+.form-row > input::placeholder {
+  color: #ccc;
+  font-style: italic;
+}
+.form-row > button:hover {
+  cursor: grabbing;
+  box-shadow: 0px 4px 8px 0px #0008;
+}
+.form-row > button {
+  box-shadow: 0px 4px 8px 0px #ccc;
+  border: none;
+  background-color: #0751DA;
+  background: rgb(34,76,214);
+  background: linear-gradient(49deg, rgba(34,76,214,1) 0%, rgba(7,81,218,1) 100%);
+  color: #fff;
+  border-radius: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 20px;
+  line-height: 30px;
+}
+.form-row > span {
+  text-transform: lowercase;
+  line-height: 30px;
+  font-size: 18px;
+}
+.form-row > a {
+  color: #0751DA;
+  text-decoration: none;
+  line-height: 30px;
+  font-size: 18px;
+}
+.form-row > a:hover {
+  cursor: crosshair;
+  text-decoration: underline;
 }
