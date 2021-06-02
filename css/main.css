@@ -21,16 +21,24 @@ main {
 }
 
 .left-column {
+  margin-top: 24px;
+  color: white;
   background-image: url(../img/picas.jpg);
   background-size: cover;
   width: 40%;
   float: left;
   padding: 50px;
+  height: 550px;
 }
 
 .bottom-links {
+  margin-top: 390px;
+  color: white;
 }
 .bottom-links > a {
+  text-decoration: underline;
+  text-decoration-color: violet;
+  color: white;
 }
 .bottom-links > span {
 }
